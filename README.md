@@ -1,1 +1,6 @@
-# Orchards-Problems
+## Orchards-Problems
+
+###
+Three gardeners who grow apples have formed a group with each other to maximize their profits. Currently, these three people are in the annual council meeting to decide on the amount of production for the next year. The amount of production of each farm depends on the arable land and the amount of available water. These data are given in Table 1.
+Each farm can grow three types of apples: red, rose and green. The profit from the sale of each of these apples and the amount of water needed to grow them are different. Also, in previous meetings, in order to prevent price and profit drop, the ship ceiling has been set for each type of apples, all of this information is given in Table 2.
+Since the availability of water has decreased this year due to the drought, it is not possible to use the entire capacity of the land for cultivation. To ensure equality among gardeners, the ratio of cultivation in all fields is supposed to be the same. For example, if the first gardener cultivates 200 hectares of his total area of 400 hectares, the second gardener must plant and harvest apples in 300 hectares of the total 600 hectares. The amount of cultivation of each type of apple in each field was determined according to the mentioned limitations in such a way as to maximize the net profit of gardeners. The data of the above tables were entered and read in Excel. Enter Excel. The optimal values were outputted in a new sheet.
