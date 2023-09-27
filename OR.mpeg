@@ -1,0 +1,43 @@
+/*********************************************
+ * OPL 22.1.0.0 Model
+ * Author: ASUS
+ * Creation Date: Apr 28, 2023 at 5:58:54 PM
+ *********************************************/
+
+/*indices*/
+{string} farm = ...;
+{string} apple = ...;
+
+/*parameters*/
+int land[farm] = ...;
+int water[farm] = ...;
+int maxland[apple] = ...;
+int waterneeded[apple] = ...;
+int profit[apple] = ...;
+
+/*decision variabels*/
+dvar float+ land_apple[apple][farm];
+
+/*objective function*/
+maximize sum(j in farm,i in apple) profit[i] * land_apple[i][j];
+
+/*constraints*/
+subject to{
+ forall (j in farm)
+   sum (i in apple) land_apple[i][j]<= land[j];
+ forall (j in farm)
+   sum (i in apple) (waterneeded[i] * land_apple[i][j])<=water[j];
+ forall (i in apple)
+   sum (j in farm) land_apple[i][j]<= maxland[i];
+   
+(sum (i in apple) land_apple[i]["1"])/land["1"]==(sum (i in apple) land_apple[i]["2"] )/land["2"];
+(sum (i in apple) land_apple[i]["1"])/land["1"]==(sum (i in apple) land_apple[i]["3"] )/land["3"];
+(sum (i in apple) land_apple[i]["2"] )/land["2"]==(sum (i in apple) land_apple[i]["3"] )/land["3"];
+ } 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
