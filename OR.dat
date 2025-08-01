@@ -1,7 +1,7 @@
 farm = {"1" "2" "3"};
 apple={"1" "2" "3"};
  
-SheetConnection OR("C:\\Users\\ASUS\\Dropbox\\My PC (DESKTOP-TTB2M26)\\Downloads\\OR.xlsx");
+SheetConnection OR("C:\Users\Se7eN.CO\Downloads");
 
 land from SheetRead (OR,"Sheet1! B2 : B4");
 water from SheetRead (OR,"Sheet1! C2 : C4");
