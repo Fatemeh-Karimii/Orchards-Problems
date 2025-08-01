@@ -1,9 +1,3 @@
-/*********************************************
- * OPL 22.1.0.0 Data
- * Author: ASUS
- * Creation Date: Apr 28, 2023 at 5:58:54 PM
- *********************************************/
-
 farm = {"1" "2" "3"};
 apple={"1" "2" "3"};
  
@@ -15,4 +9,3 @@ maxland from SheetRead (OR,"Sheet1! B7 : B9");
 waterneeded from SheetRead (OR,"Sheet1! C7 : C9");
 profit from SheetRead (OR,"Sheet1! D7 : D9");
 land_apple to SheetWrite (OR, "Sheet2! B2 : D4 ");
-
